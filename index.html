@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="takius">
+	<head>
+		<title>My mobile app</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/styles/loading-bar.css" />
+		<link rel="stylesheet" type="text/css" href="/styles/jquery.fancybox.css" />
+		<link rel="stylesheet" type="text/css" href="/styles/style.css" />
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.fancybox.js"></script>
+		<script type="text/javascript" src="/js/angular.min.js"></script>
+		<script type="text/javascript" src="/js/angular-route.min.js"></script>
+		<script type="text/javascript" src="/js/angular-animate.min.js"></script>
+		<script type="text/javascript" src="/js/loading-bar.js"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
+	</head>
+	<body>
+		<div id="header-container" class="">
+				<img src="/images/takius.png" id="pic" class="img-circle"/>
+		</div>
+		<span class="col-md-6 col-sm-6 col-xs-6" id="name">MEROUANI Akram</span>
+		<span class="col-md-6 col-sm-6 col-xs-6" id="job">Web developer</span>
+		<ng-include src="'/partials/welcome.html'"></ng-include>
+		<ng-include src="'/partials/skills.html'"></ng-include>
+		<ng-include src="'/partials/work.html'"></ng-include>
+		<ng-include src="'/partials/education.html'"></ng-include>
+		<ng-include src="'/partials/portfolio.html'"></ng-include>
+		<div class="col-md-12" style="margin-top:20px;text-align:center;padding:0;">
+			<ng-include src="'/partials/langues.html'"></ng-include>
+			<ng-include src="'/partials/loisirs.html'"></ng-include>
+			<ng-include src="'/partials/voyages.html'"></ng-include>
+		</div>
+		<div style="height:50px;clear:both;"></div>
+	</body>
+</html>

@@ -1,0 +1,264 @@
+@font-face{
+    font-family: 'Imprima';
+	src: url('/fonts/imprima.ttf')
+}
+
+body{
+	margin: auto ;
+	background: url("/images/body.jpg") center 140px no-repeat , url("/images/db.jpg");
+	font-family: 'Imprima', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, a, img{
+	border: 0 ;
+	margin: 0 ;
+	padding: 0 ;
+}
+
+#header-container{
+	background: url("/images/header-bg.jpg") left bottom repeat-x;
+	border-bottom: 2px solid #fff ;
+	box-shadow: 0 1px 3px #444 ;
+	padding: 0 ;
+}
+
+#header{
+	margin: auto ;
+	float: none ;
+}
+
+#pic{
+	float: none ;
+	box-shadow: 0 0 3px 1px #444 ;
+	border: 2px solid #fff ;
+	margin: auto ;
+	clear: both ;
+	display: block ;
+	position: relative ;
+	padding: 0 ;
+	top: 50% ;
+}
+
+#name{
+	text-align: right ;	
+	padding-right: 100px ;
+}
+
+#job{
+	text-align: left ;	
+	padding-left: 100px ;
+}
+
+#name, #job{
+	margin-top: 10px ;
+	letter-spacing: 0.3px ;
+	color: #444 ;
+	text-shadow: 1px 1px 1px #fff ;
+	font-weight: bold ;
+	margin-bottom: 60px ;
+	font-size: 16px ;
+}
+
+#welcome{
+	text-align: center ;
+	line-height: 22px ;
+	float: none ;
+	clear: both ;
+	margin: auto ;
+	overflow: hidden ;
+	color: #222 ;
+	text-shadow: 1px 1px 1px #fff ;
+	float: none ;
+	clear: both ;
+}
+
+.ng-enter{
+	transition: 0.5s ;
+	opacity: 0 ;
+}
+
+.ng-enter-active{
+	opacity: 1 ;
+}
+
+.ng-leave{
+	transition: 0.5s ;
+	opacity: 1 ;
+}
+
+.ng-leave-active{
+	opacity: 0 ;
+}
+
+#skills{
+	/*
+	background: url("/images/header-bg.jpg") center top repeat-x;
+	border-top: 2px solid #fff ;
+	border-bottom: 2px solid #fff ;
+	box-shadow: 0 0 3px 1px #444 ;
+	*/
+	text-align: center ;
+	margin: auto ;
+	margin-top: 20px ;
+	padding-top: 10px ;
+	float: none ;
+}
+
+.skill{
+	padding-top: 30px ;
+	border: 2px solid #fff ;
+	color: #fff ;
+	font-weight: bold ;
+	margin: 5px ;
+	border-radius: 50% ;
+	height: 85px ;
+	width: 85px ;
+	background: #54a5d8 ;
+	box-shadow: 0 0 3px #333 ;
+	display: -moz-stack ;
+	font-size: 13px ;
+	text-shadow: 1px 1px 1px #777 ;
+}
+
+.l2{
+	padding-top: 20px ;
+}
+
+.skill span{
+	display: inline-block ;
+	vertical-align: middle ;
+}
+
+.title{
+	text-shadow: 1px 1px 1px #fff ;
+	margin-bottom: 20px ;
+	text-align: center ;
+}
+
+#work-container{
+	float: right ;
+	padding: 0 ;
+}
+
+.work{
+	padding: 10px 15px ;
+	margin-top: 15px ;
+	background: rgba(0,0,0, 0.05);
+	box-shadow: 0px -1px 0px #fff inset, 2px 2px 1px #777 inset ;
+	border-radius: 50px ;
+}
+
+.skill-right{
+	float: right ;
+}
+
+#education-container{
+	padding: 0 ;
+	padding-bottom: 50px ;
+}
+
+#education-container .work{
+	margin-top: 35px ;
+}
+
+#port-container{
+	float: none ;
+	margin: auto ;
+	margin-top: 20px ;
+	padding: 0 ;
+}
+
+.port{
+	margin-left: 20px ;
+	margin-bottom: 20px ;
+	display: inline-block ;
+}
+
+#port_images{
+	float: none ;
+	padding: 0 ;
+}
+
+#port_images a{
+
+}
+
+#port_images img{
+	width: 100px ;
+	border: 1px solid #fff ;
+	box-shadow: 0 0 3px #333 ;
+}
+
+.lang{
+	background: #54a5d8 ;
+	border: 2px solid #fff ;	
+	box-shadow: 0 0 3px #333 ;
+	border-radius: 50% ;
+	width: 100px ;
+	height: 100px ;
+	float: left ;
+	margin: 10px ;
+	padding-top: 10px ;
+	text-align: center ;
+	display: inline ;
+}
+
+.lang span{
+	display: block ;
+	float: none ;
+	margin: auto ;
+	margin-top: 5px ;
+	width: 80px ;
+}
+
+@media (max-width: 360px){
+	body{background:url("/images/db.jpg");}
+	#header-container{
+		height: 100px ;	
+	}
+	#pic{
+		top: 20px ;
+		width: 150px ;
+	}
+	#welcome{
+		height: 130px ;
+		overflow: hidden ;
+	}
+	#name, #job{ text-align: center; font-size: 14px ; }
+	#job{padding-left:80px;}
+	#name{padding-left:0px;padding-right:70px}
+	.port{
+		margin-left: 3px ;
+	}
+	.lang{
+		margin: 3px ;
+	}
+}
+
+@media (min-width: 370px){
+	.port{
+		margin-left: 15px ;
+	}
+	#header-container{
+		height: 120px ;	
+	}
+	#pic{
+		top: 40px ;
+		width: 150px ;
+	}
+	#welcome{
+		line-height: 24px ;
+		margin-top: 100px ;
+	}
+}
+
+@media (min-width: 748px){
+	#header-container{
+		height: 140px ;
+	}
+	#pic{
+		top: 50px ;
+		width: 170px ;
+	}
+}
+
